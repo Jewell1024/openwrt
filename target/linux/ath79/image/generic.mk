@@ -3207,3 +3207,15 @@ define Device/zyxel_nbg6616
   SUPPORTED_DEVICES += nbg6616
 endef
 TARGET_DEVICES += zyxel_nbg6616
+
+define Device/ethmain_station-v1
+  $(Device/tplink-16mlzma)
+  SOC := qca9531
+  DEVICE_VENDOR := ETHMAIN
+  DEVICE_MODEL := STATION-V1
+  IMAGE_SIZE := 16192k
+  SUPPORTED_DEVICES += ethmain_station-v1
+endef
+TARGET_DEVICES += ethmain_station-v1
+
+
