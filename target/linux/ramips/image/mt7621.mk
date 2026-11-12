@@ -2327,3 +2327,13 @@ define Device/zyxel_wap6805
   IMAGE/sysupgrade.bin := sysupgrade-tar | append-metadata
 endef
 TARGET_DEVICES += zyxel_wap6805
+
+define Device/tl-wdr7500-v8.0
+  IMAGE_SIZE := 16064k
+  DEVICE_VENDOR := TP-Link
+  DEVICE_MODEL := TL-WDR7500
+  DEVICE_VARIANT := v8.0
+  DEVICE_PACKAGES := kmod-mt76 kmod-mt7615e kmod-mt7615-firmware \
+	rssileds kmod-leds-gpio
+endef
+TARGET_DEVICES += tl-wdr7500-v8.0
